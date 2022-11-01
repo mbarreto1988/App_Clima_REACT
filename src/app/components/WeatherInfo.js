@@ -14,19 +14,19 @@ const WeatherInfo = props => {
                 <div className="card card-body mt-2 animated fadeInUp" >
                     {
                         props.city && props.country &&
-                        <p><i className="fas fa-location-arrow"></i> Location: {props.city}, {props.country}</p>
+                        <p><i className="fas fa-location-arrow"></i> Ubicacion: {props.city}, {props.country}</p>
                     }
                     {
                         props.temperature &&
-                        <p><i className="fas fa-temperature-low"></i> Temperature: {props.temperature} ℃, {props.description}</p>
+                        <p><i className="fas fa-temperature-low"></i> Temperatura: {props.temperature} ℃, {props.description}</p>
                     }
                     {
                         props.humidity &&
-                        <p><i className="fas fa-water"></i> Humidity: {props.humidity}</p>
+                        <p><i className="fas fa-water"></i> Humedad: {props.humidity}</p>
                     }
                     {
                         props.wind_speed &&
-                        <p><i className="fas fa-wind"></i> Wind Speed: {props.wind_speed}</p>
+                        <p><i className="fas fa-wind"></i> Velocidad del Viento: {props.wind_speed}</p>
                     }
                 </div>
                 :
