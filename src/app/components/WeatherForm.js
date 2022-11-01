@@ -1,10 +1,10 @@
 import React from "react";
 
 const WeatherForm = props => (
-    <div className="card card-body">
+    <div className="card card-body ">
         <form onSubmit={props.getWeather}>
             <div className="form-group">
-                <input type="text" name="country" placeholder="Your Country Name" className="form-control" />
+                <input type="text" name="country" placeholder="Your Country Name" className="form-control" value="Argentina" />
             </div>
             <div className="form-group">
                     <select name="city" placeholder="Your City Name" className="form-control">                        
@@ -14,6 +14,7 @@ const WeatherForm = props => (
                         <option>Cordoba</option>
                         <option>Mendoza</option>
                         <option>Salta</option>
+                        <option>Chaco</option>
                     </select>
             </div>
             <button className="btn btn-success btn-block">

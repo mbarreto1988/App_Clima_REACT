@@ -25,7 +25,7 @@ class App extends Component {
 
         if(cityValue && countryValue){
 
-            const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue},${countryValue}&appid=${WEATHER_KEY}&units=metric`;
+            const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue},ar&appid=${WEATHER_KEY}&units=metric`;
             const response = await fetch(API_URL);
             const data = await response.json();
     
