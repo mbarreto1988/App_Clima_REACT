@@ -1,13 +1,21 @@
-/* body{
-    background-image: url(../app/assets/nubes.jpg);
-} */
+body{
+    background-image: url(../app/assets/nubes_new.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
 .card-body{
     border-radius: 15px;
     background-color: aqua;
     opacity: .8;
 }
+.text-center{
+    opacity: .5;
+}
 .btn{
     border-radius: 20px;
+    opacity: .8;
 }
 select.form-control, input.form-control{
     border-radius: 10px;
@@ -26,3 +34,7 @@ video {
     background-color: rgba(0,0,0,.4);
     /* background-color: #000000cc; */
   }
+  .g-col-6 i{
+    border-radius: 10px;
+  }
+ 
