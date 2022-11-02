@@ -34,11 +34,11 @@ class App extends Component {
             const datoss = await respuesta1.json();
             console.log(datoss);
             console.log(datoss.list[0].dt_txt);
-            console.log(datoss.list[4].dt_txt);
-            console.log(datoss.list[12].dt_txt);
-            console.log(datoss.list[19].dt_txt);
-            console.log(datoss.list[26].dt_txt);
-            console.log(datoss.list[35].dt_txt);
+            console.log(datoss.list[8].dt_txt);
+            console.log(datoss.list[16].dt_txt);
+            console.log(datoss.list[24].dt_txt);
+            console.log(datoss.list[32].dt_txt);
+            console.log(datoss.list[39].dt_txt);
     
             this.setState({
                 day: datoss.list[0].dt_txt,
@@ -49,46 +49,51 @@ class App extends Component {
                 city: data.name,
                 country: data.sys.country,
                 error: null,
-                day_2: datoss.list[4].dt_txt,
-                temperature_2: datoss.list[4].main.temp,
-                description_2: datoss.list[4].weather[0].description,
-                humidity_2: datoss.list[4].main.humidity,
-                wind_speed_2: datoss.list[4].wind.speed,
-                city_2: datoss.list[4].name,
-                country_2: datoss.list[4].sys.country,
+
+                day_2: datoss.list[8].dt_txt,
+                temperature_2: datoss.list[8].main.temp,
+                description_2: datoss.list[8].weather[0].description,
+                humidity_2: datoss.list[8].main.humidity,
+                wind_speed_2: datoss.list[8].wind.speed,
+                city_2: datoss.list[8].name,
+                country_2: datoss.list[8].sys.country,
                 error_2: null,
-                day_3: datoss.list[12].dt_txt,
-                temperature_3: datoss.list[12].main.temp,
-                description_3: datoss.list[12].weather[0].description,
-                humidity_3: datoss.list[12].main.humidity,
-                wind_speed_3: datoss.list[12].wind.speed,
-                city_3: datoss.list[12].name,
-                country_3: datoss.list[12].sys.country,
+
+                day_3: datoss.list[16].dt_txt,
+                temperature_3: datoss.list[16].main.temp,
+                description_3: datoss.list[16].weather[0].description,
+                humidity_3: datoss.list[16].main.humidity,
+                wind_speed_3: datoss.list[16].wind.speed,
+                city_3: datoss.list[16].name,
+                country_3: datoss.list[16].sys.country,
                 error_3: null,
-                day_4: datoss.list[19].dt_txt,
-                temperature_4: datoss.list[19].main.temp,
-                description_4: datoss.list[19].weather[0].description,
-                humidity_4: datoss.list[19].main.humidity,
-                wind_speed_4: datoss.list[19].wind.speed,
-                city_4: datoss.list[19].name,
-                country_4: datoss.list[19].sys.country,
+
+                day_4: datoss.list[24].dt_txt,
+                temperature_4: datoss.list[24].main.temp,
+                description_4: datoss.list[24].weather[0].description,
+                humidity_4: datoss.list[24].main.humidity,
+                wind_speed_4: datoss.list[24].wind.speed,
+                city_4: datoss.list[24].name,
+                country_4: datoss.list[24].sys.country,
                 error_4: null,
-                day5: datoss.list[26].dt_txt,
-                temperature5: datoss.list[26].main.temp,
-                description5: datoss.list[26].weather[0].description,
-                humidity5: datoss.list[26].main.humidity,
-                wind_speed5: datoss.list[26].wind.speed,
-                city5: datoss.list[26].name,
-                country5: datoss.list[26].sys.country,
-                error5: null,                
-                day_6: datoss.list[35].dt_txt,
-                temperature_6: datoss.list[35].main.temp,
-                description_6: datoss.list[35].weather[0].description,
-                humidity_6: datoss.list[35].main.humidity,
-                wind_speed_6: datoss.list[35].wind.speed,
-                city_6: datoss.list[35].name,
-                country5: datoss.list[35].sys.country,
-                error5: null
+
+                day_5: datoss.list[32].dt_txt,
+                temperature_5: datoss.list[32].main.temp,
+                description_5: datoss.list[32].weather[0].description,
+                humidity_5: datoss.list[32].main.humidity,
+                wind_speed_5: datoss.list[32].wind.speed,
+                city_5: datoss.list[32].name,
+                country_5: datoss.list[32].sys.country,
+                error_5: null,     
+
+                day_6: datoss.list[39].dt_txt,
+                temperature_6: datoss.list[39].main.temp,
+                description_6: datoss.list[39].weather[0].description,
+                humidity_6: datoss.list[39].main.humidity,
+                wind_speed_6: datoss.list[39].wind.speed,
+                city_6: datoss.list[39].name,
+                country_6: datoss.list[39].sys.country,
+                error_6: null
             });
         } else {
             this.setState({error: 'Please enter a City and a Country.'})
