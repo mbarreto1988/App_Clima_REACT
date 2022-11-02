@@ -34,7 +34,7 @@ const WeatherInfo = props => {
                 </div>                
                 :
                 <div className="card card-body mt-2 text-center">
-                    <i className="fas fa-sun fa-8x"></i>
+                    <i className="fa fa-cloud fa-8x"></i>
                 </div>
             }
             {props.city ?
