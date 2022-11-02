@@ -32,7 +32,10 @@ class App extends Component {
 
             const respuesta1 = await fetch(api_dias);
             const datoss = await respuesta1.json();
+
+
             console.log(datoss);
+            console.log(data);
             console.log(datoss.list[0].dt_txt);
             console.log(datoss.list[8].dt_txt);
             console.log(datoss.list[16].dt_txt);
