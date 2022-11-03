@@ -1,22 +1,30 @@
-npm init --yes //inicia el proyecto
-npm i react react-dom //instala el package y react
-npm i -D //instala otras dependencias
-//npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader mini-css-extract-plugin @babel/cli @babel/core @babel/precet-react @babel/preset-env @babel/plugin-proposal-class-properties @babel/polyfill
+("npm start") {para iniciar la app} 
+    Se abrira sola en una ventana del navegador", en el caso de no tener el node_modules, realizar primero "npm i" y una vez instalado el modulo ahi si levantar con "npm start".
 
-npm install --save-dev webpack
-npm install --save-dev webpack-cli
-npm install webpack-dev-server --save-dev
-npm install --save-dev style-loader
-npm install --save-dev css-loader
-npm install --save-dev mini-css-extract-plugin
-npm install --save-dev @babel/cli
-npm install --save-dev @babel/core
-npm install --save-dev @babel/preset-react
-npm install --save-dev @babel/preset-env
-npm install --save-dev @babel/plugin-proposal-class-properties
-npm install --save @babel/polyfill
-npm install -D babel-loader
-npm i --save-dev html-webpack-plugin
+Esta aplicacion decidi empezarla desde cero con las configuraciones paso a paso inicializando el proyecto en nodeJS y luego instalando las dependencias a utilizar, generalmente me gusta usar el "Create React App", pero decidi hacerlo manual desde cero.
+
+Utilize para este proyecto dependencias y frameworks como "webpack, css, babel, boostrap"
+
+Trate de dar lo que pedia la consigna, por supuesto hay mucho que se puede mejorar y agregar,
+deje el codigo todo al descubierto para su referencia y analisis dejando lo mas claro posible la arquitectura del mismo.
+
+No se realizo ningun Test del codigo.
+
+la Resolucion de 1280x768 funciona bien, se posiciono de forma absoluta para su correcta visualizacion en dicha resolucion.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -26,22 +26,17 @@ class App extends Component {
         if(cityValue && countryValue){
 
             const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue},ar&appid=${WEATHER_KEY}&units=metric`;
-            const api_dias = `https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=ed19f75d2b20a8a8c280df206dcb079a&units=metric`;
+            const api_dias = `https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=${WEATHER_KEY}&units=metric`;
             const response = await fetch(API_URL);
             const data = await response.json();
-
             const respuesta1 = await fetch(api_dias);
             const datoss = await respuesta1.json();
 
-
             console.log(datoss);
+            console.log(data.main.temp);
             console.log(data);
             console.log(datoss.list[0].dt_txt);
-            console.log(datoss.list[8].dt_txt);
-            console.log(datoss.list[16].dt_txt);
-            console.log(datoss.list[24].dt_txt);
-            console.log(datoss.list[32].dt_txt);
-            console.log(datoss.list[39].dt_txt);
+            console.log(datoss.list[8].main.temp);
     
             this.setState({
                 day: datoss.list[0].dt_txt,

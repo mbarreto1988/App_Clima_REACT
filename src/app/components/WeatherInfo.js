@@ -3,7 +3,7 @@ import React from "react";
 const WeatherInfo = props => {
     console.log(props)
     return (
-        <div>
+        <div className="cont_gral card-group">
             {props.error &&
                 <div className="alert alert-danger">
                     <p>{props.error}</p>
@@ -33,13 +33,12 @@ const WeatherInfo = props => {
                     }
                 </div>
                 :
-                <div className="card card-body mt-2 text-center" id="bajada">
-                </div>
+                ""
             }
             <div className="position-absolute bottom-0 end-0" id="contenedor_props">
-                <div className="d-flex justify-content-evenly ">
+                <div className="d-flex justify-content-evenly" id="cont-props">
                     {props.city ?
-                        <div className="card card-body mt-1 animated fadeInUp bg-success p-2 text-dark bg-opacity-50" id="dias_post">
+                        <div className="card card-body mt-1 mx-2 animated fadeInUp bg-success p-2 text-dark bg-opacity-50" id="dias_post">
                             {
                                 props.day_2 &&
                                 <p><i className="fas fa-calendar"></i> Día: {props.day_2}</p>
@@ -64,7 +63,7 @@ const WeatherInfo = props => {
                         : ""
                     }
                     {props.city ?
-                        <div className="card card-body mt-1 animated fadeInUp bg-success p-2 text-dark bg-opacity-50" id="dias_post" >
+                        <div className="card card-body mt-1 mx-2 animated fadeInUp bg-success p-2 text-dark bg-opacity-50" id="dias_post" >
                             {
                                 props.day_3 &&
                                 <p><i class="fas fa-calendar"></i> Día: {props.day_3}</p>
@@ -89,7 +88,7 @@ const WeatherInfo = props => {
                         : ""
                     }
                     {props.city ?
-                        <div className="card card-body mt-1 animated fadeInUp bg-success p-2 text-dark bg-opacity-50" id="dias_post" >
+                        <div className="card card-body mt-1 mx-2 animated fadeInUp bg-success p-2 text-dark bg-opacity-50" id="dias_post" >
                             {
                                 props.day_4 &&
                                 <p><i class="fas fa-calendar"></i> Día: {props.day_4}</p>
@@ -114,7 +113,7 @@ const WeatherInfo = props => {
                         : ""
                     }
                     {props.city ?
-                        <div className="card card-body mt-1 animated fadeInUp bg-success p-2 text-dark bg-opacity-50" id="dias_post" >
+                        <div className="card card-body mt-1 mx-2 animated fadeInUp bg-success p-2 text-dark bg-opacity-50" id="dias_post" >
                             {
                                 props.day_5 &&
                                 <p><i class="fas fa-calendar"></i> Día: {props.day_5}</p>
@@ -139,7 +138,7 @@ const WeatherInfo = props => {
                         : ""
                     }
                     {props.city ?
-                        <div className="card card-body mt-1 animated fadeInUp bg-success p-2 text-dark bg-opacity-50" id="dias_post" >
+                        <div className="card card-body mt-1 mx-2 animated fadeInUp bg-success p-2 text-dark bg-opacity-50" id="dias_post" >
                             {
                                 props.day_6 &&
                                 <p><i class="fas fa-calendar"></i> Día: {props.day_6}</p>
